@@ -38,8 +38,15 @@ public class TouristController {
     }
 
     @PostMapping("/update")
-    public ResponseEntity<TouristAttraction> updateAttraction(@RequestParam String name, @RequestBody TouristAttraction attraction) {
+    public ResponseEntity<TouristAttraction> updateAttraction(@RequestBody TouristAttraction attraction) {
+    TouristAttraction updateAttraction = touristService.updateAttraction(attraction);
+    return new ResponseEntity<>(updateAttraction, HttpStatus.OK);
+    }
 
+    @PostMapping("/delete/{name}")
+    public ResponseEntity<TouristAttraction> deleteAttraction(@PathVariable String name) {
+        TouristAttraction deleteAttraction = touristService.deleteAttraction(name);
+        return new ResponseEntity<>(deleteAttraction, HttpStatus.OK);
     }
 
 
