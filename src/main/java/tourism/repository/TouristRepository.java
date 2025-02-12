@@ -17,9 +17,16 @@ public class TouristRepository {
     }
 
     private void populateAttractions() {
-        attractions.add(new TouristAttraction("Grand Canyon", "A vast canyon with stunning rock formations."));
-        attractions.add(new TouristAttraction("Eiffel Tower", "An iconic iron tower with panoramic city views."));
-        attractions.add(new TouristAttraction("Taj Mahal", "A white marble mausoleum symbolizing eternal love."));
+        attractions.add(new TouristAttraction("Tivoli", "En historisk forlystelsespark i hjertet af København."));
+        attractions.add(new TouristAttraction("Den Lille Havfrue", "En berømt bronzestatue inspireret af H.C. Andersens eventyr."));
+        attractions.add(new TouristAttraction("Legoland Billund", "En familievenlig forlystelsespark bygget af LEGO-klodser."));
+        attractions.add(new TouristAttraction("Nyhavn", "Et ikonisk havnekvarter med farverige bygninger og livlige caféer."));
+        attractions.add(new TouristAttraction("Kronborg Slot", "Shakespeares berømte Hamlet-slot, fyldt med historie og kultur."));
+        attractions.add(new TouristAttraction("Møns Klint", "Storslåede hvide kridtklinter med fantastisk udsigt over havet."));
+        attractions.add(new TouristAttraction("Rundetårn", "Et gammelt observatorium med en unik spiralrampe og flot udsigt."));
+        attractions.add(new TouristAttraction("ARoS Aarhus Kunstmuseum", "Et moderne kunstmuseum kendt for sin regnbuepanorama."));
+        attractions.add(new TouristAttraction("Ribe Domkirke", "Danmarks ældste domkirke i en charmerende middelalderby."));
+        attractions.add(new TouristAttraction("Nationalmuseet", "Danmarks største kulturhistoriske museum med unikke udstillinger."));
     }
 
     public List<TouristAttraction> getAttractions() {
